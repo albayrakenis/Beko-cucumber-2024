@@ -1,1 +1,0 @@
-{"uuid":"bd8868cd-6e4e-45bb-8e3d-2e0ff1d4dba7","name":"Scenario Outline: Test01- Basarili Giris","children":["1b29f7dc-611e-4c3d-adb5-5d0664836add"],"befores":[{"name":"stepdef.MyStepdefs.setup()","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1734861825037,"stop":1734861825047}],"afters":[],"start":1734861825037,"stop":1734861842771}

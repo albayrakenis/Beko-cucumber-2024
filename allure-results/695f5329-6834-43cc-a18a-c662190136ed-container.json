@@ -1,1 +1,0 @@
-{"uuid":"695f5329-6834-43cc-a18a-c662190136ed","name":"Scenario: Test04 - KVKK Onayı Kontrolü","children":["72c28630-7222-4e7f-ab9c-5afc0d56e1af"],"befores":[{"name":"stepdef.MyStepdefs.setup()","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1734863076653,"stop":1734863076661}],"afters":[],"start":1734863076652,"stop":1734863076845}

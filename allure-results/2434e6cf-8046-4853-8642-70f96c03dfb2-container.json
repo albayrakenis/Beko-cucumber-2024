@@ -1,1 +1,0 @@
-{"uuid":"2434e6cf-8046-4853-8642-70f96c03dfb2","name":"Scenario Outline: Test04- Sepeti Bosaltma","children":["cd7c264a-d367-4910-a392-ceea26c93922"],"befores":[{"name":"stepdef.MyStepdefs.setup()","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1734862297100,"stop":1734862297105}],"afters":[],"start":1734862297100,"stop":1734862326547}

@@ -1,1 +1,0 @@
-{"uuid":"e994d783-396b-4c50-8da0-3cfbd536934b","name":"Scenario Outline: Test04-  Adres Ekleme","children":["b83b6d89-f136-4794-8f5b-16ab688d1cd8"],"befores":[{"name":"stepdef.MyStepdefs.setup()","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1734861894402,"stop":1734861894407}],"afters":[],"start":1734861894401,"stop":1734861923740}
