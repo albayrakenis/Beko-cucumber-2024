@@ -194,6 +194,7 @@ public class CommonLib extends BaseTest{
     }
     public void ıAcceptOnBilgilendirmeAndSatisSozlesmesi() throws IOException, ParseException {
 
+        try {
         System.out.println("ön bilgilendirme ve satış sözleşmesi");
         seePage("CartPage");
 
@@ -202,6 +203,10 @@ public class CommonLib extends BaseTest{
 
         WebElement satisSozlemesi = myDriver.findElement(By.id("chk_cart_sum_confirm_2"));
         satisSozlemesi.click();
+            allureReport(StepResultType.PASS, "Clicked to element.", true);
+        } catch (Exception e) {
+            allureReport(StepResultType.FAIL, "Could not click to element.", true);
+        }
     }
     public void ıApprovedKVKK(String arg0) throws IOException, ParseException {
        seePage("ContactPage");
