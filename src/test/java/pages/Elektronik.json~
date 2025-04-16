@@ -1,0 +1,84 @@
+{
+  "pages": [
+    {
+      "pageInfo": {
+        "pageName": "Elektronik",
+        "parentName": "",
+        "waitElement": ""
+      },
+      "elements": [
+
+        {
+          "elementName": "Bilgisayar",
+          "elementType": "cssSelector",
+          "elementValue": "[href='bilgisayar'] > span"
+        },
+        {
+          "elementName": "Cep Telefonu",
+          "elementType": "cssSelector",
+          "elementValue": "[href='cep-telefonu'] > span"
+        },{
+          "elementName": "Cep Telefonu Aksesuarlari",
+          "elementType": "cssSelector",
+          "elementValue": "[href='cep-telefonu-aksesuarlari'] > span"
+        },
+        {
+          "elementName": "Giyilebilir Teknoloji",
+          "elementType": "cssSelector",
+          "elementValue": "[href='giyilebilir-teknoloji'] > span"
+        },
+        {
+          "elementName": "Hobi Oyunlari",
+          "elementType": "cssSelector",
+          "elementValue": "[href='hobi---oyun-gaming-urunleri'] > span"
+        },
+        {
+          "elementName": "Ses ve Goruntu Sistemleri",
+          "elementType": "cssSelector",
+          "elementValue": "[href='ses-goruntu-sistemleri'] > span"
+        },{
+          "elementName": "Spor ve Outdoor",
+          "elementType": "cssSelector",
+          "elementValue": "[href='spor-ve-outdoor'] > span"
+        },
+        {
+          "elementName": "Telefon",
+          "elementType": "cssSelector",
+          "elementValue": "[href='telefon'] > span"
+        },{
+          "elementName": "Odeme Sistemleri",
+          "elementType": "cssSelector",
+          "elementValue": "[href='odeme-sistemleri'] > span"
+        },
+        {
+          "elementName": "Elekronik Text",
+          "elementType": "cssSelector",
+          "elementValue": ".categoryPage-page div:nth-of-type(2) > h1"
+        },
+        {
+          "elementName": "Sol Panel Header Text",
+          "elementType": "cssSelector",
+          "elementValue": ".pnl-left > h1"
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        },
+        {
+          "elementName": "",
+          "elementType": "cssSelector",
+          "elementValue": ""
+        }
+
+
+
+      ]
+    }
+  ]
+}
