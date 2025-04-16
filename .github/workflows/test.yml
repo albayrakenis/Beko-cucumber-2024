@@ -1,0 +1,52 @@
+name: Cucumber Test Workflow
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Java
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Run Cucumber Tests with Maven
+        run: mvn clean test
+
+      - name: Generate Allure Report
+        run: mvn allure:report
+
+      - name: Upload Allure Report as Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: allure-report
+          path: target/site/allure-maven-plugin
+
+      - name: Send Email Notification
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: ${{ secrets.EMAIL_USER }}
+          password: ${{ secrets.EMAIL_PASS }}
+          subject: 🧪 Cucumber Test Sonuçları
+          to: bekos1test@gmail.com
+          from: ${{ secrets.EMAIL_USER }}
+          body: |
+            Merhaba,
+            
+            Cucumber testleri başarıyla çalıştı. Allure raporunu aşağıdaki GitHub Actions sayfasından indirebilirsiniz:
+            
+            🔗 https://github.com/albayrakenis/Beko-cucumber-2024/actions/runs/${{ github.run_id }}
+            
+            İyi çalışmalar!
