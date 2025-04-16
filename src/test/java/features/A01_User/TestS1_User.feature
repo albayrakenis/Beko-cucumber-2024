@@ -78,6 +78,7 @@ Feature: Kullanici islemleri
 
   @user @smoke @yanlissifre2 @regresyon
   Scenario Outline: Test02- Yanlis Sifre ile Giris Denemesi
+
     When I see "HomePage" page
     When I go to "<url>" with configuration
     Then I wait "uyelik button" element
