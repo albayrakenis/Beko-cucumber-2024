@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven_3.9.8' // Jenkins > Global Tool Configuration’da tanımladığın isimle aynı olmalı
+        maven 'Maven_3.9.8' // Jenkins > Global Tool Configuration’da tanımladığın isim
     }
 
     environment {
@@ -13,7 +13,7 @@ pipeline {
     stages {
         stage('Build & Test') {
             steps {
-                sh 'mvn clean test'
+                bat 'mvn clean test'
             }
         }
     }
