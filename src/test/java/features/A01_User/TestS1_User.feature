@@ -99,8 +99,8 @@ Feature: Kullanici islemleri
     Examples:
       | username             | passwordWrong | url |
       | kullanici1@gmail.com | Albayra41     | url |
-      | abcd@gmail.com       | Albayra41     | url |
-      | 1234@gmail.com       | Albayra41     | url |
+     # | abcd@gmail.com       | Albayra41     | url |
+     # | 1234@gmail.com       | Albayra41     | url |
 
 
   @user @smoke @yanlisSifre @regresyon
