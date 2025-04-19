@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        MAVEN_HOME = tool 'C:\apache-maven-3.9.8-bin\apache-maven-3.9.8' // Jenkins'te tanımlı Maven versiyonun ismi
+        MAVEN_HOME = tool 'C:\\apache-maven-3.9.8-bin\\apache-maven-3.9.8' // Jenkins'te tanımlı Maven versiyonun ismi
         PATH = "${MAVEN_HOME}/bin:${env.PATH}"
     }
 
