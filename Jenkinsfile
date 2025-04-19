@@ -2,11 +2,11 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven_3.9.8' // Jenkins > Global Tool Configuration’da tanımladığın isim
+        maven 'Maven' // Buradaki isim, Jenkins’te tanımladığın isimle birebir aynı olmalı!
     }
 
     environment {
-        MAVEN_HOME = tool 'Maven_3.9.8'
+        MAVEN_HOME = tool 'Maven'
         PATH = "${MAVEN_HOME}/bin:${env.PATH}"
     }
 
