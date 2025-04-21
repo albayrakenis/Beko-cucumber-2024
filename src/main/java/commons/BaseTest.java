@@ -12,41 +12,37 @@ import org.testng.annotations.Parameters;
 
 public class BaseTest {
 
-
     @BeforeMethod
     @Parameters({"browserName"})
     public static void beforeMethod(String browserName) {
         System.out.println("Starting the browser session");
-        System.out.println("Browser Name:"+browserName);
+        System.out.println("Browser Name: " + browserName);
 
-        if(browserName.equalsIgnoreCase("chrome"))
-        {   WebDriverManager.chromedriver().setup();
-            ChromeOptions chromeOptions = new ChromeOptions();
-            chromeOptions.addArguments("start-maximized");
-            chromeOptions.addArguments("--remote-allow-origins=*");
-            MyDriver.setMyDriver(new ChromeDriver(chromeOptions));
-        }
-        else if(browserName.equalsIgnoreCase("headless")) {
-            // headless mode do
+        if (browserName.equalsIgnoreCase("chrome")) {
             WebDriverManager.chromedriver().setup();
             ChromeOptions chromeOptions = new ChromeOptions();
             chromeOptions.addArguments("start-maximized");
-            chromeOptions.addArguments("--headless");
             chromeOptions.addArguments("--remote-allow-origins=*");
             MyDriver.setMyDriver(new ChromeDriver(chromeOptions));
 
+        } else if (browserName.equalsIgnoreCase("headless")) {
+            WebDriverManager.chromedriver().setup();
+            ChromeOptions chromeOptions = new ChromeOptions();
+            chromeOptions.addArguments("--headless=new"); // Yeni headless modu
+            chromeOptions.addArguments("--no-sandbox");
+            chromeOptions.addArguments("--disable-dev-shm-usage");
+            chromeOptions.addArguments("--disable-gpu");
+            chromeOptions.addArguments("--window-size=1920,1080");
+            chromeOptions.addArguments("--remote-allow-origins=*");
+            MyDriver.setMyDriver(new ChromeDriver(chromeOptions));
 
-        }
-        else if(browserName.equalsIgnoreCase("firefox")){
+        } else if (browserName.equalsIgnoreCase("firefox")) {
             WebDriverManager.firefoxdriver().setup();
             FirefoxOptions firefoxOptions = new FirefoxOptions();
-          //  firefoxOptions.addArguments("start-maximized");
-           // firefoxOptions.addArguments()
-          //  firefoxOptions.addArguments("--remote-allow-origins=*");
             MyDriver.setMyDriver(new FirefoxDriver(firefoxOptions));
             MyDriver.getMyDriver().manage().window().maximize();
 
-        }else {
+        } else {
             Assert.fail("BrowserName is not valid");
         }
     }
@@ -55,6 +51,5 @@ public class BaseTest {
     public void afterMethod() {
         System.out.println("Closing the browser session");
         MyDriver.getMyDriver().quit();
-
     }
 }
