@@ -18,7 +18,7 @@ Feature: Satin Alma Islemleri
     When I see "HomePage" page
     Then I wait "search box" element
     Then I wait until element to be clickable and click to "search box" element
-    Then I send key to "search box text" element text:"8914701200"
+    Then I send key to "search box text" element text:"8818761600"
     #Then I send key to "search box text" element text:"8914691200"
     Then I wait until element to be clickable and click to "search icon" element
     Then I sleep for 3 seconds
@@ -39,7 +39,7 @@ Feature: Satin Alma Islemleri
     Then I sleep for 3 seconds
     Then I choose city "İSTANBUL" from list for click and collect
     Then I sleep for 3 seconds
-    Then I choose town "ATAŞEHİR" from list for click and collect
+    Then I choose town "BAĞCILAR" from list for click and collect
     Then I sleep for 3 seconds
     Then I wait until element to be clickable and click to "Magaza Ara" element
     Then I wait until element to be clickable and click to "Sec" element
