@@ -26,23 +26,18 @@
         },
         {
           "elementName": "BS Beyaz esya",
-          "elementType": "cssSelector",
-          "elementValue": "[data-answer-id='1058615'] > .button__text"
+          "elementType": "xpath",
+          "elementValue": "//button[@data-answer-id='1058615']"
         },
         {
           "elementName": "BS Derin dondurucu",
           "elementType": "xpath",
-          "elementValue": "//span[.='Derin Dondurucu']"
+          "elementValue": "//button[@data-answer-id='1058621']"
         },
         {
           "elementName": "BS cekmeceli",
           "elementType": "xpath",
-          "elementValue": "//span[.='\u00C7ekmeceli (Dikey)']"
-        },
-        {
-          "elementName": "BS Derin dondurucu",
-          "elementType": "xpath",
-          "elementValue": "//span[.='Derin Dondurucu']"
+          "elementValue": "//button[@data-answer-id='1057404']"
         },
         {
           "elementName": "BS elektrikli supurge",
@@ -52,7 +47,7 @@
         {
           "elementName": "BS emin degilim",
           "elementType": "xpath",
-          "elementValue": "//span[.='Emin de\u011Filim']"
+          "elementValue": "//button[@data-answer-id='1057436']"
         },
         {
           "elementName": "BS onemli degil",
@@ -67,7 +62,7 @@
         {
           "elementName": "BS Henuz karar vermedim",
           "elementType": "xpath",
-          "elementValue": "//span[.='Hen\u00FCz karar vermedim']"
+          "elementValue": "//button[@data-answer-id='1125579']"
         },
 
         {
@@ -83,9 +78,20 @@
         },
 
         {
-          "elementName": "BS listenen supurge",
-          "elementType": ".pnl-left > h1",
-          "elementValue": "cssSelector"
+          "elementName": "BS Sonuc Sayfasi Derin Dondurucu",
+          "elementType": "xpath",
+          "elementValue": "(//span[contains(text(),'Derin Dondurucu')])[4]"
+        },
+
+        {
+          "elementName": "BS Sonuc Sayfasi Derin Dondurucu Sol Panel",
+          "elementType": "cssSelector",
+          "elementValue": "div[class='pnl-left'] h1"
+        },
+        {
+          "elementName": "Cerezleri kabul et",
+          "elementType": "xpath",
+          "elementValue": "//button[@id='onetrust-accept-btn-handler']"
         }
 
 

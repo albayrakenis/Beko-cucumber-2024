@@ -82,8 +82,7 @@ Feature: Kullanici islemleri
     When I see "HomePage" page
     When I go to "<url>" with configuration
     Then I wait "uyelik button" element
-    Then I wait "username" element
-    #Then I sleep for 5 seconds
+    Then I sleep for 3 seconds
     And I wait until element to be clickable and click to "Cerezleri kabul et" element if element exist:1
     Then I wait until element to be clickable and click to "uyelik button" element
     When I see "LoginPage" page

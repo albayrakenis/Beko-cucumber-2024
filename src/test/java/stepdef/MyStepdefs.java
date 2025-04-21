@@ -323,4 +323,9 @@ public class MyStepdefs extends BaseTest{
     public void ıCheckElementCountIsGreaterThanWithXpath(String arg0, String arg1) {
         commonLib.ıCheckElementCountIsGreaterThanWithXpath(arg0, arg1);
     }
+
+    @And("I switch to window")
+    public void ıSwitchToWindow() {
+        commonLib.switchToNewTabAndVerifyTitle();
+    }
 }

@@ -20,6 +20,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.Set;
 
 import static org.testng.AssertJUnit.*;
 
@@ -1138,6 +1139,23 @@ public class CommonLib extends BaseTest{
 
     }
 
+
+    public void switchToNewTabAndVerifyTitle() {
+        String originalWindow = myDriver.getWindowHandle();
+
+
+        // Tüm pencere tanıtıcılarını al
+        Set<String> windowHandles = myDriver.getWindowHandles();
+
+        // Yeni pencereye geç
+        for (String handle : windowHandles) {
+            if (!handle.equals(originalWindow)) {
+                myDriver.switchTo().window(handle);
+                break;
+            }
+        }
+
+    }
 
 
 }
