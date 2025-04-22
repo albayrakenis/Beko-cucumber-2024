@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 
 
 @CucumberOptions(
-        tags = "@loginSuccess",
+        tags = "@main",
         plugin = {"pretty",
                 "html:target/cucumber-reports/cucumber.html",
                 "json:target/cucumber-reports/cucumber.json",
