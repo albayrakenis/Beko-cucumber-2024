@@ -3,7 +3,7 @@
 <suite name="Practice Suite">
 
     <listeners>
-        <listener class-name="listeners.TestFilterListener"></listener>
+        <listener class-name="listeners.TestFilterListener"/>
     </listeners>
 
     <test name="order3" enabled="false">

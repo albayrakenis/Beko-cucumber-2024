@@ -52,7 +52,7 @@ Feature: Kullanici islemleri
       | kullanici1 | sifre    | url |
 
 
-  @user @smoke @loginSuccess @regresyon
+  @user @smoke  @regresyon
   Scenario Outline: Test01- Basarili Giris
     When I go to "<url>" with configuration
     When I see "HomePage" page
