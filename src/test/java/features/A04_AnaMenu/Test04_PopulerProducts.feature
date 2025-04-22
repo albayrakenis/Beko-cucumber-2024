@@ -1,6 +1,6 @@
 Feature: Ana menü kontrolleri
 
-  @smoke @populer @main
+  @smoke @populer @main @rapor
   Scenario Outline: Test04- Populer urunler
     When I see "HomePage" page
     Then I go to "<url>" with configuration

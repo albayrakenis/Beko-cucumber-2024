@@ -11,17 +11,15 @@ import java.util.Properties;
 
 public class SummaryMailListener implements IExecutionListener {
 
-    // SMTP bilgileri - isterseniz env değişkenden alın
     private static final String HOST = "smtp.gmail.com";
     private static final String PORT = "587";
     private static final String USER = "bekos1test@gmail.com";
-    private static final String PASS = "cqfy ttnq yyph tfan"; // uygulama şifresi
+    private static final String PASS = "cqfy ttnq yyph tfan";
     private static final String FROM = "bekos1test@gmail.com";
     private static final String TO   = "bekos1test@gmail.com";
 
     @Override
     public void onExecutionStart() {
-        // İstersen başlarken log mesajı at
         System.out.println(">>> Test yürütmesi başladı");
     }
 
@@ -36,6 +34,13 @@ public class SummaryMailListener implements IExecutionListener {
     }
 
     private void sendSummaryMail() throws Exception {
+        // Cucumber HTML raporunun yolu
+        File reportFile = new File("target/cucumber-reports/cucumber.html");
+        if (!reportFile.exists()) {
+            throw new Exception("Cucumber raporu bulunamadı: " + reportFile.getAbsolutePath());
+        }
+
+        // SMTP ayarları
         Properties props = new Properties();
         props.put("mail.smtp.auth", "true");
         props.put("mail.smtp.starttls.enable", "true");
@@ -48,36 +53,34 @@ public class SummaryMailListener implements IExecutionListener {
             }
         });
 
-        // Mesaj oluştur
+        // E-posta mesajı
         Message msg = new MimeMessage(session);
         msg.setFrom(new InternetAddress(FROM));
         msg.setRecipient(Message.RecipientType.TO, new InternetAddress(TO));
-        msg.setSubject("🧪 Test Özeti ve Rapor");
+        msg.setSubject("🧪 Test Özeti ve Cucumber Raporu");
 
-        // Multipart içerik
+        // Mail içeriği
         MimeBodyPart textPart = new MimeBodyPart();
-        textPart.setText("Merhaba,\n\nTest yürütmesi tamamlandı. Ekteki raporu inceleyebilirsiniz.\n\nİyi çalışmalar!.\n\n Enis ALBAYRAK");
+        textPart.setText(
+                "Merhaba,\n\n" +
+                        "Test yürütmesi tamamlandı. Ekte Cucumber test raporunu bulabilirsiniz.\n\n" +
+                        "İyi çalışmalar!\nEnis ALBAYRAK"
+        );
 
-        // Rapor dosyasını attachment olarak ekle
-        // Allure: target/allure-report/index.html dizini; Cucumber: target/cucumber-reports/cucumber.html
-        File report = new File("target/allure-report/index.html");
-        if (!report.exists()) {
-            // Allure raporu yoksa Cucumber raporunu deneyelim
-            report = new File("target/cucumber-reports/cucumber.html");
-        }
+        // Raporu ekle
         MimeBodyPart attachment = new MimeBodyPart();
-        FileDataSource ds = new FileDataSource(report);
-        attachment.setDataHandler(new DataHandler(ds));
-        attachment.setFileName(report.getName());
+        FileDataSource fds = new FileDataSource(reportFile);
+        attachment.setDataHandler(new DataHandler(fds));
+        attachment.setFileName("cucumber.html");
 
+        // Mesajı birleştir
         Multipart mp = new MimeMultipart();
         mp.addBodyPart(textPart);
         mp.addBodyPart(attachment);
-
         msg.setContent(mp);
 
         // Gönder
         Transport.send(msg);
-        System.out.println(">>> Özet mail gönderildi: " + report.getAbsolutePath());
+        System.out.println(">>> Cucumber raporu başarıyla gönderildi.");
     }
 }
