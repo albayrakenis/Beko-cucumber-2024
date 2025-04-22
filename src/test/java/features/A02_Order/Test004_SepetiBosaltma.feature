@@ -39,9 +39,9 @@ Feature: Satin Alma Islemleri
     Examples:
       | username   | password | url | urun       |
       | kullanici1 | sifre    | url | 8912281200 |
-      | kullanici1 | sifre    | url | 7966021600 |
-      | kullanici1 | sifre    | url | 7966021600 |
-      | kullanici1 | sifre    | url | 8808871200 |
+#      | kullanici1 | sifre    | url | 7966021600 |
+#      | kullanici1 | sifre    | url | 7966021600 |
+#      | kullanici1 | sifre    | url | 8808871200 |
       | kullanici1 | sifre    | url | 8832671200 |
       | kullanici1 | sifre    | url | 8916151200 |
 

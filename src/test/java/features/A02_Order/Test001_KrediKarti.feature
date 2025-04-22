@@ -57,8 +57,8 @@ Feature: Satin Alma Islemleri
 
     Examples:
       | username   | password | url | urun       |
-      | kullanici2 | sifre    | url | 8914111200 |
-     # | kullanici2 | sifre    | url | 8818041200 |
+     # | kullanici2 | sifre    | url | 8914111200 |
+      | kullanici2 | sifre    | url | 8818041200 |
      # | kullanici2 | sifre    | url | 8808871200 |
      # | kullanici2 | sifre    | url | 7630710277 |
 
