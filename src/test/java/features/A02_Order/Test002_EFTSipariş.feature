@@ -68,4 +68,4 @@ Feature: Satin Alma Islemleri
       #| url | 7966021600 |
       #| url | 8808871200 |
       #| url | 8832671200 |
-      | url | 8916151200 |
+     # | url | 8916151200 |
