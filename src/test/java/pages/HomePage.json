@@ -315,10 +315,27 @@
           "elementType": "xpath",
           "elementValue": "//div[@class='container-fluid']//div[@id='featured-technology']//div[2]//a[contains(.,'\u0130ncele')]"
         },
+
+        {
+          "elementName": "360 image",
+          "elementType": "xpath",
+          "elementValue": "//button[@class='btn-360']"
+        },
+        {
+          "elementName": "360 image active",
+          "elementType": "xpath",
+          "elementValue": "//button[@class='btn-360 btn-360-active']"
+        },
+        {
+          "elementName": "AR aciklama",
+          "elementType": "xpath",
+          "elementValue": "//div[@class='ar-text-d']"
+        },
+
         {
           "elementName": "AR text",
-          "elementType": "cssSelector",
-          "elementValue": ".container-fluid #featured-technology div:nth-of-type(2) .bnr-title"
+          "elementType": "xpath",
+          "elementValue": "//div[@class='ar-title']"
         },
         {
           "elementName": "AR arama sonuclari",
