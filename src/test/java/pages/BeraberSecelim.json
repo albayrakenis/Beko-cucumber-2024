@@ -80,7 +80,7 @@
         {
           "elementName": "BS Sonuc Sayfasi Derin Dondurucu",
           "elementType": "xpath",
-          "elementValue": "(//span[contains(text(),'Derin Dondurucu')])[4]"
+          "elementValue": "(//span[contains(text(),'Derin Dondurucu')])[5]"
         },
 
         {
