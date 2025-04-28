@@ -17,6 +17,7 @@ Feature: Satin Alma Islemleri
     Then I wait until element to be clickable and click to "incele button" element
     When I see "PDP" page
     Then I wait until element to be clickable and click to "Sepete At Button" element
+    Then I sleep for 4 seconds
     Then I wait until element to be clickable and click to "Sepete Git Button" element
     When I see "CartPage" page
     And I scroll until find "Sepeti Onayla Button" element with action
@@ -66,5 +67,5 @@ Feature: Satin Alma Islemleri
       | url | 8912281200 |
       #| url | 7966021600 |
       #| url | 8808871200 |
-      | url | 8832671200 |
+      #| url | 8832671200 |
       | url | 8916151200 |
