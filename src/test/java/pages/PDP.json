@@ -40,7 +40,7 @@
         {
           "elementName": "Pdp ilk urun",
           "elementType": "xpath",
-          "elementValue": "(//article[1]//a[contains(.,'\u0130ncele')])[2]"
+          "elementValue": "(//a[@title='\u0130ncele'])[2]"
         },
         {
           "elementName": "Urun sepete eklendi text",

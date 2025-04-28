@@ -21,6 +21,7 @@ Feature: Satin Alma Islemleri
     Then I sleep for 4 seconds
     And I scroll until find "Pdp ilk urun" element with action
     And I wait until element to be clickable and click to "Pdp ilk urun" element
+    And I sleep for 5 seconds
     And I scroll until find "Sepete At Button" element with action
     And I wait until element to be clickable and click to "Sepete At Button" element
     And I wait "Urun sepete eklendi text" element
