@@ -1,7 +1,7 @@
 Feature: Satin Alma Islemleri
 
 
-     @order @masterpass
+     @order @masterpass @smoke
   Scenario Outline: Test016- Masterpass
     When I see "HomePage" page
     When I go to "<url>" with configuration
@@ -53,8 +53,7 @@ Feature: Satin Alma Islemleri
 
     Examples:
       | username   | password | url | urun       |
-      | kullanici1 | sifre    | url | 8914111200 |
-      | kullanici1 | sifre    | url | 8818041200 |
-      | kullanici1 | sifre    | url | 8808871200 |
-      | kullanici1 | sifre    | url | 7254140210 |
+      | kullanici2 | sifre    | url | 8914111200 |
+      | kullanici2 | sifre    | url | 8818041200 |
+      | kullanici2 | sifre    | url | 7254140210 |
 
