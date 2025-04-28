@@ -22,6 +22,7 @@ Feature: Satin Alma Islemleri
     And I wait until element to be clickable and click to "Pdp ilk urun" element
     And I wait until element to be clickable and click to "Sepete At Button" element
     And I wait "Urun sepete eklendi text" element
+    And I sleep for 3 seconds
     And I wait until element to be clickable and click to "Sepete Git Button" element
     When I see "CartPage" page
     And I wait "Sepet Title" element
