@@ -18,7 +18,7 @@ Feature: Satin Alma Islemleri
     When I see "CartPage" page
     And I wait "Sepet Title" element
     And I wait "Sepete Eklenen Urun Text" element
-    And I check "Sepete Eklenen Urun Text" element text is equal "KMB 900 I"
+    And I check "Sepete Eklenen Urun Text" element text is equal "CEG 7304 X CaffeExperto® Tam Otomatik"
     And I wait "Sepeti Bosalt" element
     Then I sleep for 10 seconds
 
