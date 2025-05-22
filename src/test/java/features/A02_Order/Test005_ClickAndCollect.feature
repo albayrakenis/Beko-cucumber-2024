@@ -14,7 +14,7 @@ Feature: Satin Alma Islemleri
     Then I login with "<username>" and "<password>"
     And I scroll until find "giris yap" element with action
     Then I wait until element to be clickable and click to "giris yap" element
-    Then I sleep for 7 seconds
+    Then I sleep for 9 seconds
     When I see "HomePage" page
     Then I wait "search box" element
     Then I wait until element to be clickable and click to "search box" element

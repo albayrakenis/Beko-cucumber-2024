@@ -9,8 +9,8 @@ Feature: Satin Alma Islemleri
     Then I wait "uyelik button" element
     Then I sleep for 8 seconds
     When I see "HomePage" page
-    And I scroll until find "Anasayfa kurutma makinesi" element with action
-    And I wait until element to be clickable and click to "Anasayfa kurutma makinesi" element
+    And I scroll until find "Anasayfa kahve makinesi" element with action
+    And I wait until element to be clickable and click to "Anasayfa kahve makinesi" element
     When I see "PDP" page
     And I wait until element to be clickable and click to "Sepete At Button" element
     And I wait "Urun sepete eklendi text" element

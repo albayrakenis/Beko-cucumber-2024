@@ -171,9 +171,9 @@
           "elementValue": "[aria-label='Robo-X 2.0 RS 8121 \u00FCr\u00FCn detaylar\u0131n\u0131 incele']"
         },
         {
-          "elementName": "Anasayfa kurutma makinesi",
+          "elementName": "Anasayfa kahve makinesi",
           "elementType": "xpath",
-          "elementValue": "//a[@href='/kurutma-makinesi/kmb-900-i-kurutma-makinesi']"
+          "elementValue": "//div[@id='popular-products2']//a[@title='\u0130ncele']"
         },
         {
           "elementName": "Banner next button",
