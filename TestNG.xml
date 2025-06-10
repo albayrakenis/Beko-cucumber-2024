@@ -15,7 +15,7 @@
         </classes>
     </test> <!-- Test -->
 
-    <test name="order2" enabled="true">
+    <test name="order2" enabled="false">
         <!--parameter name="browserName" value="chrome"/>-->
         <parameter name="browserName" value="chrome"/>
         <classes>
@@ -23,7 +23,7 @@
         </classes>
     </test> <!-- Test -->
 
-    <test name="order" enabled="false">
+    <test name="order" enabled="true">
         <!--parameter name="browserName" value="chrome"/>-->
         <parameter name="browserName" value="headless"/>
         <classes>
