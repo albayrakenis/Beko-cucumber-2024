@@ -11,7 +11,7 @@ Feature: Kullanici islemleri
     Then I wait until element to be clickable and click to "uyelik button" element
     When I see "LoginPage" page
     Then I wait "username" element
-    Then I wait "password" element
+#    Then I wait "password" element
     Then I login with "<username>" and "<password>"
     And I scroll until find "giris yap" element with action
     Then I wait until element to be clickable and click to "giris yap" element
@@ -37,7 +37,6 @@ Feature: Kullanici islemleri
     Then I wait until element to be clickable and click to "uyelik button" element
     When I see "LoginPage" page
     Then I wait "username" element
-    Then I wait "password" element
     Then I login with "<username>" and "<password>"
     And I scroll until find "giris yap" element with action
     Then I wait until element to be clickable and click to "giris yap" element
@@ -61,7 +60,6 @@ Feature: Kullanici islemleri
     Then I wait until element to be clickable and click to "uyelik button" element
     When I see "LoginPage" page
     Then I wait "username" element
-    Then I wait "password" element
     Then I login with "<username>" and "<password>"
     And I scroll until find "giris yap" element with action
     Then I wait until element to be clickable and click to "giris yap" element
@@ -87,8 +85,8 @@ Feature: Kullanici islemleri
     Then I wait until element to be clickable and click to "uyelik button" element
     When I see "LoginPage" page
     Then I wait "username" element
-    Then I wait "password" element
     Then I send key to "username" element text:"<username>"
+    Then I wait until element to be clickable and click to "Devam Et" element
     Then I send key to "password" element text:"<passwordWrong>"
     And I scroll until find "giris yap" element with action
     Then I wait until element to be clickable and click to "giris yap" element
@@ -111,8 +109,8 @@ Feature: Kullanici islemleri
     Then I wait until element to be clickable and click to "uyelik button" element
     When I see "LoginPage" page
     Then I wait "username" element
-    Then I wait "password" element
     Then I send key to "username" element text:"<usernameWrong>"
+    Then I wait until element to be clickable and click to "Devam Et" element
     Then I send key to "password" element text:"<password>"
     And I scroll until find "giris yap" element with action
     Then I wait until element to be clickable and click to "giris yap" element
@@ -136,7 +134,6 @@ Feature: Kullanici islemleri
     Then I wait until element to be clickable and click to "uyelik button" element
     When I see "LoginPage" page
     Then I wait "username" element
-    Then I wait "password" element
     Then I login with "<username>" and "<password>"
     And I scroll until find "giris yap" element with action
     Then I wait until element to be clickable and click to "giris yap" element
@@ -183,7 +180,6 @@ Feature: Kullanici islemleri
     Then I wait until element to be clickable and click to "uyelik button" element
     When I see "LoginPage" page
     Then I wait "username" element
-    Then I wait "password" element
     Then I login with "<username>" and "<password>"
     And I scroll until find "giris yap" element with action
     Then I wait until element to be clickable and click to "giris yap" element
@@ -228,7 +224,6 @@ Feature: Kullanici islemleri
     Then I wait until element to be clickable and click to "uyelik button" element
     When I see "LoginPage" page
     Then I wait "username" element
-    Then I wait "password" element
     Then I login with "<username>" and "<password>"
     And I scroll until find "giris yap" element with action
     Then I wait until element to be clickable and click to "giris yap" element
@@ -265,7 +260,6 @@ Feature: Kullanici islemleri
       Then I wait until element to be clickable and click to "uyelik button" element
       When I see "LoginPage" page
       Then I wait "username" element
-      Then I wait "password" element
       Then I login with "<username>" and "<password>"
       And I scroll until find "giris yap" element with action
       Then I wait until element to be clickable and click to "giris yap" element

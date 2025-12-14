@@ -199,7 +199,6 @@ Feature: Satin Alma Islemleri
       | Beyaz Esya     | Set Ustu                   | url |
       | Beyaz Esya     | Su Sebili                  | url |
       | Beyaz Esya     | Tum Urunler beyaz esya     | url |
-
       | Ankastre       | Ankastre Firin             | url |
       | Ankastre       | Ankastre Mikro Dalgalar    | url |
       | Ankastre       | Ankastre Ocaklar           | url |
@@ -208,7 +207,6 @@ Feature: Satin Alma Islemleri
       | Ankastre       | Ankastre Bulasik Makinesi  | url |
       | Ankastre       | Ankastre Buzdolabi         | url |
       | Ankastre       | Tum Urunler ankastre       | url |
-
       | Televizyon     | 4K OLED TV                 | url |
       | Televizyon     | Google TV                  | url |
       | Televizyon     | Android TV                 | url |
@@ -219,7 +217,6 @@ Feature: Satin Alma Islemleri
       | Televizyon     | LED & LCD TV               | url |
       | Televizyon     | QLED                       | url |
       | Televizyon     | Tum Urunler televizyon     | url |
-
       | Elektronik     | Cep Telefonu               | url |
       | Elektronik     | Cep Telefonu Aksesuarlar   | url |
       | Elektronik     | Giyilebilir Teknoloji      | url |
@@ -228,8 +225,6 @@ Feature: Satin Alma Islemleri
       | Elektronik     | Odeme Sistemleri           | url |
       | Elektronik     | Hobi - Oyun                | url |
       | Elektronik     | Tum Urunler elektronik     | url |
-
-
       | isitma sogutma | Klima                      | url |
       | isitma sogutma | Kombi                      | url |
       | isitma sogutma | Termosifon                 | url |
@@ -239,9 +234,6 @@ Feature: Satin Alma Islemleri
       | isitma sogutma | Vantilator                 | url |
       | isitma sogutma | Nem Alma Cihazi            | url |
       | isitma sogutma | Tum Urunler isitma sogutma | url |
-
-
-
       | KEA            | Elektrikli Supurge         | url |
       | KEA            | Utu                        | url |
       | KEA            | Kahve Makinesi             | url |

@@ -18,6 +18,11 @@
           "elementValue": "//input[@id='j_password']"
         },
         {
+          "elementName": "Devam Et",
+          "elementType": "xpath",
+          "elementValue": "//button[@id='login-validate-input']"
+        },
+        {
           "elementName": "giris yap",
           "elementType": "xpath",
           "elementValue": "//button[@id='g-recaptcha-btn-login']"

@@ -980,11 +980,14 @@ public class CommonLib extends BaseTest{
     public void ıLoginWithAnd(String username, String sifre) {
        username =ConfigurationReader.getProperty(username);
        sifre =ConfigurationReader.getProperty("sifre");
+       WebElement DevamEt = myDriver.findElement(By.xpath("//button[@id='login-validate-input']"));
         try{
         waitElement("username");
-        waitElement("password");
+
 
         sendKeys("username", username);
+        DevamEt.click();
+            waitElement("password");
         sendKeys("password", sifre);
         allureReport(StepResultType.PASS, "Url opened successfully", true);
     } catch (Exception e) {
